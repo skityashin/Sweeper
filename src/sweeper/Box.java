@@ -22,4 +22,12 @@ public enum Box {
 
     public Image image;
 
+    Box getNextNumberBox() {
+        return Box.values()[this.ordinal() + 1];
+    }
+
+    int getNumber() {
+        return this.ordinal();
+    }
+
 }
